@@ -1,3 +1,34 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Git](#git)
+  - [Goals](#goals)
+  - [Conceptual](#conceptual)
+  - [Practical](#practical)
+- [Node](#node)
+  - [Goals](#goals-1)
+  - [Conceptual](#conceptual-1)
+  - [Practical](#practical-1)
+- [Docker](#docker)
+  - [Goals](#goals-2)
+  - [Conceptual](#conceptual-2)
+  - [Practical](#practical-2)
+- [Mongo](#mongo)
+  - [Goals](#goals-3)
+  - [Conceptual](#conceptual-3)
+  - [Practical](#practical-3)
+- [HTML / CSS](#html--css)
+  - [Goals](#goals-4)
+  - [Conceptual](#conceptual-4)
+  - [Practical](#practical-4)
+- [Putting it all together](#putting-it-all-together)
+  - [Goal](#goal)
+  - [Practical](#practical-5)
+- [Extra](#extra)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Git
 ## Goals
 To get a very basic understanding of what Git is and be able to use it to checkout tags to do the exercises
