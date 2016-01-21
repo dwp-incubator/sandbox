@@ -1,0 +1,59 @@
+We want the Architecture conference in February to provide as much value to architects as possible, appropriate to the typical skills and experience of attendees. We are aiming to deliver a hands-on session and to gauge the scope and complexity of the material we would like to get a sense of the Javascript skills (if any) of the architecture community. The results are anonymous and will in any case not be shared outside of the small group developing the material.
+
+0. Please rate your ability to read Javascript that has been written by others
+
+   No Knowledge / Basic Understanding / Good Understanding / Expert
+
+1. Please rate your experience in writing Javascript 
+   
+   No Experience / Basic Understanding of Syntax / Good Understanding of Syntax / Good Understanding of Syntax and some experience of 3rd party libraries like JQuery or Angular / Expert with extensive experience of 3rd party libraries and/or NodeJs
+
+2. Define an array that contains the following names
+
+Chris Woods 
+Simon Turner
+Andy Jones
+Sanjay Gupta
+Tam Sayers
+
+3. Write a function printNames() which loops over the names array and writes it out to the console
+
+4. Write a function transformNames() which takes a function as an argument. This should return a new array with the results of calling the supplied function on every element in the names array.
+
+5. Now put the names array and both listNames() and transformNames() into a module and scope the array to be private but the function to be public.
+
+6. Invoke transformNames() from outside the module, passing a function taking a single argument "name" and returning only the first word in that name.
+
+==============
+Target answer:
+
+var module = (function(){ 
+  var names = ["Chris Woods","Simon Turner","Andy Jones","Sanjay Gupta","Tam Sayers"];
+ 
+  var printNames = function() {
+    for(var name in names){
+      console.log(name);
+    }
+  }
+  
+  var transformNames = function(transformer) {
+    return names.map(transformer);
+  }
+  
+  return {
+    printNames: printNames,
+    transformNames: transformNames
+  };
+  
+})();
+
+module.transformNames(function(name) {
+  return name.split(" ")[0];
+});
+
+
+
+
+
+
+

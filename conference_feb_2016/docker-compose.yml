@@ -1,0 +1,12 @@
+web:
+  build: .
+  ports:
+   - "8080:8080"
+  volumes:
+   - "./app:/opt/handsonnode/app"
+  links:
+   - "mongo"
+mongo:
+  image: mongo
+  ports:
+   - "27017:27017"
