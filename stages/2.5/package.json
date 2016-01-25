@@ -1,0 +1,14 @@
+{
+  "name": "blueprint-demo",
+  "version": "1.0.0",
+  "description": "A demo project to showcase some of the technologies in the blueprint",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
