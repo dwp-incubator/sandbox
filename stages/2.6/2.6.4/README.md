@@ -1,0 +1,5 @@
+- Changing the new server to use the 8000 port.
+- Removing the old implementation that does not use express
+- Maybe show a comparison of:
+  - Number of dependencies old vs. new
+  - Lines of code old vs. new

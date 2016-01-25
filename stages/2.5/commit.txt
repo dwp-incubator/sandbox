@@ -1,0 +1,1 @@
+2.5 initialized the project with npm, added the node_modules directory path to a .gitignore file, used npm to install express as a dependency
