@@ -56,7 +56,7 @@ Work through a subset of LearnYouNode tutorials to get a feel for the basics of 
 1. [x] A Hello World http server
 2. [x] Introduce nodemon
 3. [x] Start building the REST ape by modifying http server to give a fixed response only to GET and POST on /customers.
-4. [ ] Discuss capturing the request body i.e. on(‘data’,…) and on (‘end’,…). And extracting the id from customer/:id. Review – without a framework, the code is low-level and awkward
+4. [x] Discuss capturing the request body i.e. on(‘data’,…) and on (‘end’,…). And extracting the id from customer/:id. Review – without a framework, the code is low-level and awkward
 5. [ ] Introduce npm and import express
 6. [ ] Re-implement GET on /customers and /customers/:id with express
 7. [ ] Discuss HTTP verbs in the context of REST, idempotency of GET and PUT etc.

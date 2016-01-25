@@ -1,0 +1,1 @@
+2.4.2 Updated the GET /customers handler to response to a GET request for a single customer (by id) or to get the entire set of customers which currently exist

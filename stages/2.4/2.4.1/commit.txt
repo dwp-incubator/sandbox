@@ -1,0 +1,1 @@
+2.4.1 Parse the POST payload, return more meaningful http response codes and also keep a set of customers in memory, returning the set on a GET request to the /customers endpoint.
