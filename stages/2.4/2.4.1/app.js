@@ -23,7 +23,7 @@ http.createServer((req, res) => {
           customer.id = nextId;
           customers[customer.id] = customer;
           nextId++;
-          res.writeHead(201);
+          res.writeHead(201, { 'Content-Type': 'text/plain', 'Location': url });
           res.end(url);
         });
 

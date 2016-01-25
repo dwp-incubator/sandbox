@@ -33,6 +33,10 @@ app.post('/customers', function(req, res){
   customers[customer.id] = customer;
   nextId++;
   res.sendStatus(201);
+  res.set('Content-Type', 'text/plain')
+    .set('Location',url)
+    .status(201)
+    .send(url);
 })
 
 app.listen(port, function () {
