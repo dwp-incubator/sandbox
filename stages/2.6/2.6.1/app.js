@@ -11,15 +11,15 @@ var nextId = 1;
 
 const app = express();
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
     res.set('Content-Type', 'text/plain').send('How do World!');
 });
 
-app.get('/customers', function (req, res) {
+app.get('/customers', (req, res) => {
     res.json(customers);
 });
 
-app.listen(newPort, function () {
+app.listen(newPort, () => {
     util.log(`New Server running at http://${hostname}:${newPort}/`);
 });
 

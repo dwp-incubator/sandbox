@@ -14,20 +14,20 @@ const app = express();
 
 app.use(bodyParser.json())
 
-app.get('/', function (req, res) {
+app.get('/',  (req, res) => {
   res.set('Content-Type', 'text/plain').send('How do World!');
 });
 
-app.get('/customers/:id', function (req, res) {
+app.get('/customers/:id',  (req, res) => {
   var customerId = parseInt(req.params.id);
   res.json(customers[customerId]);
 });
 
-app.get('/customers', function (req, res) {
+app.get('/customers',  (req, res) => {
   res.json(customers);
 });
 
-app.post('/customers', function(req, res){
+app.post('/customers', (req, res){ =>
   const url = `http://${hostname}:${port}/customers/${nextId}`;
   var customer = req.body;
   customer.id = nextId;
@@ -37,9 +37,9 @@ app.post('/customers', function(req, res){
     .set('Location',url)
     .status(201)
     .send(url);
-})
+});
 
-app.listen(newPort, function () {
+app.listen(newPort, () => {
     util.log(`New Server running at http://${hostname}:${newPort}/`);
 });
 

@@ -20,7 +20,12 @@ app.get('/',  (req, res) => {
 
 app.get('/customers/:id',  (req, res) => {
   var customerId = parseInt(req.params.id);
-  res.json(customers[customerId]);
+  var customer = customers[customerId];
+  if(customer === undefined){
+    res.sendStatus(404);
+  }else{
+    res.json(200);
+  }
 });
 
 app.get('/customers',  (req, res) => {
@@ -37,6 +42,28 @@ app.post('/customers', (req, res){ =>
     .set('Location',url)
     .status(201)
     .send(url);
+});
+
+app.put('/customers/:id', (req, res) => {
+  var customerId = parseInt(req.params.id);
+  var customer = req.body;
+  customer.id = customerId;
+  if(customers[customerId] === undefined){
+    res.sendStatus(404);
+  }else{
+    customers[customerId] = customer;
+    res.sendStatus(204);
+  }
+});
+
+app.delete('/customers/:id', (req, res) => {
+  var customerId = parseInt(req.params.id);
+  if(customers[customerId] === undefined){
+    res.sendStatus(404);
+  }else{
+    delete customers[customerId];
+    res.sendStatus(204);
+  }
 });
 
 app.listen(port, () => {

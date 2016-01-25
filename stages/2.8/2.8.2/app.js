@@ -39,6 +39,20 @@ app.post('/customers', (req, res){ =>
     .send(url);
 });
 
+app.put('/customers/:id', (req, res) => {
+  var customerId = parseInt(req.params.id);
+  var customer = req.body;
+  customer.id = customerId;
+  customers[customerId] = customer;
+  res.sendStatus(204);
+});
+
+app.delete('/customers/:id', (req, res) => {
+  var customerId = parseInt(req.params.id);
+  delete customers[customerId];
+  res.sendStatus(204);
+});
+
 app.listen(port, () => {
     util.log(`New Server running at http://${hostname}:${port}/`);
 });

@@ -1,0 +1,2 @@
+- Updated the methods which require a customer id to check for its existence.
+- If a customer with the id provided does not exist, a 404 response code is given
