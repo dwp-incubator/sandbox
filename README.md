@@ -59,7 +59,7 @@ Work through a subset of LearnYouNode tutorials to get a feel for the basics of 
 4. [x] Discuss capturing the request body i.e. on(‘data’,…) and on (‘end’,…). And extracting the id from customer/:id. Review – without a framework, the code is low-level and awkward
 5. [x] Introduce npm and import express
 6. [x] Re-implement GET and POST on /customers and /customers/:id with express
-7. [ ] Discuss HTTP verbs in the context of REST, idempotency of GET and PUT etc.
+7. [x] Discuss HTTP verbs in the context of REST, idempotency of GET and PUT etc.
 8. [ ] Implement PUT and DELETE with express
 9. [ ] Introduce modules and discuss why we might separate the Customer model from the Customer REST ape (single-responsibility principle, testability, reuse etc)
 10. [ ] Create a Customer module (with in-memory state) with methods to help implement the GET methods of the REST ape
