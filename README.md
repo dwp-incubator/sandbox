@@ -54,7 +54,7 @@ Discussion of what Node is, what problem it solves, the event-loop, efficiency g
 Work through a subset of LearnYouNode tutorials to get a feel for the basics of Node, sync/async, modules
 
 1. [x] A Hello World http server
-2. [ ] Introduce nodemon
+2. [x] Introduce nodemon
 3. [ ] Start building the REST ape by modifying http server to give a fixed response only to GET and POST on /customers.
 4. [ ] Discuss capturing the request body i.e. on(‘data’,…) and on (‘end’,…). And extracting the id from customer/:id. Review – without a framework, the code is low-level and awkward
 5. [ ] Introduce npm and import express
