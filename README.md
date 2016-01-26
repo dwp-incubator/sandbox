@@ -91,14 +91,13 @@ Discussion on Mongo specifically – where it fits, strengths, weaknesses, when 
 ## Practical
 
 1. [x] Run Mongo in docker with mapped port
-2. [ ] Introduce the Mongo shell **(ENSURE MONGO CLIENT IS INSTALLED IN THE PRESENTATION IMAGE)**
-3. [ ] Import raw Customers data
-4. [ ] Query the data
-5. [ ] Insert new records
-6. [ ] Mutate and delete records
-7. [ ] Introduce aggregation pipelines
-8. [ ] Create a simple aggregation on customers using $unwind and $group to give count of Customers by benefit.
-9. [ ] Extend aggregation pipeline to group by benefit and sub-group of counts by city.
+2. [x] Introduce the Mongo shell **(ENSURE MONGO CLIENT IS INSTALLED IN THE PRESENTATION IMAGE)** and import raw Customers data
+3. [ ] Query the data
+4. [ ] Insert new records
+5. [ ] Mutate and delete records
+6. [ ] Introduce aggregation pipelines
+7. [ ] Create a simple aggregation on customers using $unwind and $group to give count of Customers by benefit.
+8. [ ] Extend aggregation pipeline to group by benefit and sub-group of counts by city.
 
 # 5. HTML / CSS
 ## Goals
