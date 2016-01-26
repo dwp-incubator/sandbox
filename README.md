@@ -75,7 +75,7 @@ Define docker components (docker, machine, compose) and concepts (images, contai
 
 ## Practical
 
-1. [ ] Dockerise the Node project with a COPY of the app folder and run using port mapping
+1. [ ] Dockerise the Node project with an ADD of the app folder and run using port mapping
 2. [ ] Introduce docker volumes and show how a mapped volume allows code changes to be picked up by nodemon
 
 # 4. Mongo
