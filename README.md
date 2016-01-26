@@ -76,7 +76,7 @@ Define docker components (docker, machine, compose) and concepts (images, contai
 ## Practical
 
 1. [x] Dockerise the Node project with an ADD of the app folder and run using port mapping
-2. [ ] Introduce docker volumes and show how a mapped volume allows code changes to be picked up by nodemon
+2. [x] Introduce docker volumes and show how a mapped volume allows code changes to be picked up by nodemon
 
 # 4. Mongo
 ## Goals
@@ -91,7 +91,7 @@ Discussion on Mongo specifically – where it fits, strengths, weaknesses, when 
 ## Practical
 
 1. [ ] Run Mongo in docker with mapped port
-2. [ ] Introduce the Mongo shell (use apt-get install mongodb-clients if missing from dev image)
+2. [ ] Introduce the Mongo shell **(ENSURE MONGO CLIENT IS INSTALLED IN THE PRESENTATION IMAGE)**
 3. [ ] Import raw Customers data
 4. [ ] Query the data
 5. [ ] Insert new records
