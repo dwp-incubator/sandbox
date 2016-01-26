@@ -61,7 +61,7 @@ Work through a subset of LearnYouNode tutorials to get a feel for the basics of 
 6. [x] Re-implement GET and POST on /customers and /customers/:id with express
 7. [x] Discuss HTTP verbs in the context of REST, idempotency of GET and PUT etc.
 8. [x] Implement PUT and DELETE with express
-9. [ ] Introduce modules and discuss why we might separate the Customer model from the Customer REST api (single-responsibility principle, testability, reuse etc)
+9. [x] Introduce modules and discuss why we might separate the Customer model from the Customer REST api (single-responsibility principle, testability, reuse etc)
 10. [ ] Create a Customer module (with in-memory state) with methods to help implement the GET methods of the REST ape
 11. [ ] Extend Customer module with methods to implement the remaining methods of the REST ape (POST, PUT and DELETE).
 
