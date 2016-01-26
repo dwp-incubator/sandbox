@@ -10,5 +10,5 @@ Invoking the following will pull down the official mongodb image if it cannot fi
 docker run -d -p 27017:27017 -t mongo
 ``
 
-The above command also maps the port 27017 on the host to the same port of the container?
+The above command also maps the port 27017 on the host to the same port of the container.  The `-d` argument also runs the container as a daemon and not in the foreground.
 
