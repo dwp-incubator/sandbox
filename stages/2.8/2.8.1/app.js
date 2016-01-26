@@ -28,11 +28,11 @@ app.get('/customers',  (req, res) => {
 });
 
 app.post('/customers', (req, res){ =>
+  const url = `http://${hostname}:${port}/customers/${nextId}`;
   var customer = req.body;
   customer.id = nextId;
   customers[customer.id] = customer;
   nextId++;
-  res.sendStatus(201);
   res.set('Content-Type', 'text/plain')
     .set('Location',url)
     .status(201)

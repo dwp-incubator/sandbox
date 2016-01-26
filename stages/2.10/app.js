@@ -3,12 +3,11 @@ const http = require('http');
 const express = require('express');
 const bodyParser = require('body-parser')
 
+const customerService = require('./lib/customer');
+
 const port = 8000;
 const newPort = 8001;
 const hostname = '127.0.0.1';
-
-var customers = {};
-var nextId = 1;
 
 const app = express();
 
@@ -20,19 +19,22 @@ app.get('/',  (req, res) => {
 
 app.get('/customers/:id',  (req, res) => {
   var customerId = parseInt(req.params.id);
-  res.json(customers[customerId]);
+  var customer = customerService.getById(customerId);
+  if(customer === undefined){
+    res.sendStatus(404);
+  }else{
+    res.json(200);
+  }
 });
 
 app.get('/customers',  (req, res) => {
-  res.json(customers);
+  res.json(customerService.list());
 });
 
-app.post('/customers', (req, res){ =>
-  const url = `http://${hostname}:${port}/customers/${nextId}`;
-  var customer = req.body;
-  customer.id = nextId;
-  customers[customer.id] = customer;
-  nextId++;
+app.post('/customers', (req, res) => {
+  var details = req.body;
+  var newCustomer = customerService.create(details);
+  const url = `http://${hostname}:${port}/customers/${newCustomer.id}`;
   res.set('Content-Type', 'text/plain')
     .set('Location',url)
     .status(201)
@@ -41,16 +43,22 @@ app.post('/customers', (req, res){ =>
 
 app.put('/customers/:id', (req, res) => {
   var customerId = parseInt(req.params.id);
-  var customer = req.body;
-  customer.id = customerId;
-  customers[customerId] = customer;
-  res.sendStatus(204);
+  var details = req.body;
+  details.id = customerId;
+  if(!customerService.update(details)){
+    res.sendStatus(404);
+  }else{
+    res.sendStatus(204);
+  }
 });
 
 app.delete('/customers/:id', (req, res) => {
   var customerId = parseInt(req.params.id);
-  delete customers[customerId];
-  res.sendStatus(204);
+  if(!customerService.delete(customerId)){
+    res.sendStatus(404);
+  }else{
+    res.sendStatus(204);
+  }
 });
 
 app.listen(port, () => {
