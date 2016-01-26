@@ -90,7 +90,7 @@ Discussion on Mongo specifically – where it fits, strengths, weaknesses, when 
 
 ## Practical
 
-1. [ ] Run Mongo in docker with mapped port
+1. [x] Run Mongo in docker with mapped port
 2. [ ] Introduce the Mongo shell **(ENSURE MONGO CLIENT IS INSTALLED IN THE PRESENTATION IMAGE)**
 3. [ ] Import raw Customers data
 4. [ ] Query the data
