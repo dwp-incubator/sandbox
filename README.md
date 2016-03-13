@@ -92,7 +92,7 @@ Discussion on Mongo specifically – where it fits, strengths, weaknesses, when 
 
 1. [x] Run Mongo in docker with mapped port
 2. [x] Introduce the Mongo shell **(ENSURE MONGO CLIENT IS INSTALLED IN THE PRESENTATION IMAGE)** and import raw Customers data
-3. [ ] Query the data
+3. [x] Query the data
 4. [ ] Insert new records
 5. [ ] Mutate and delete records
 6. [ ] Introduce aggregation pipelines
